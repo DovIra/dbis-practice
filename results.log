@@ -1,0 +1,24 @@
+2021-03-15 01:01:23,150 | INFO | Connection established
+2021-03-15 01:01:23,215 | INFO | Table is created
+2021-03-15 01:01:23,215 | INFO | Start process Odata2019File.csv data file
+2021-03-15 01:03:49,094 | INFO | File process is completed
+2021-03-15 01:03:49,100 | INFO | Process time: 0:02:25.875158
+
+2021-03-15 01:03:49,101 | INFO | Start process Odata2020File.csv data file
+2021-03-15 01:06:29,804 | INFO | File process is completed
+2021-03-15 01:06:29,805 | INFO | Process time: 0:02:40.701385
+
+2021-03-15 01:06:31,110 | INFO | ZNO results were saved
+2021-03-15 01:06:31,880 | INFO | The best result was in 2019 year with 72 test value
+2021-03-15 01:38:21,701 | INFO | Connection established
+2021-03-15 01:38:21,964 | INFO | Table is created
+2021-03-15 01:38:21,964 | INFO | Start process Odata2019File.csv data file
+2021-03-15 01:40:42,330 | INFO | File process is completed
+2021-03-15 01:40:42,336 | INFO | Process time: 0:02:20.366137
+
+2021-03-15 01:40:42,337 | INFO | Start process Odata2020File.csv data file
+2021-03-15 01:43:12,387 | INFO | File process is completed
+2021-03-15 01:43:12,389 | INFO | Process time: 0:02:30.049947
+
+2021-03-15 01:43:14,996 | INFO | ZNO results were saved
+2021-03-15 01:43:15,650 | INFO | The best result was in 2019 year with 72 test value
