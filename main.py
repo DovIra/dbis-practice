@@ -278,7 +278,7 @@ def log_best_zno_result():
         max(engBall12) as max_ball_12,
         max(engBall) as max_ball
       from zno_results
-      where engTest = 'Англійська мова' and engTestStatus = 'Зараховано'
+      where engTestStatus = 'Зараховано'
       group by year
     )
     SELECT
