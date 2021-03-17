@@ -22,3 +22,15 @@
 
 2021-03-15 01:43:14,996 | INFO | ZNO results were saved
 2021-03-15 01:43:15,650 | INFO | The best result was in 2019 year with 72 test value
+2021-03-17 10:19:09,944 | INFO | Connection established
+2021-03-17 10:19:10,400 | INFO | Table is created
+2021-03-17 10:19:10,400 | INFO | Start process Odata2019File.csv data file
+2021-03-17 10:21:39,016 | INFO | File process is completed
+2021-03-17 10:21:39,017 | INFO | Process time: 0:02:28.616239
+
+2021-03-17 10:21:39,018 | INFO | Start process Odata2020File.csv data file
+2021-03-17 10:24:07,329 | INFO | File process is completed
+2021-03-17 10:24:07,330 | INFO | Process time: 0:02:28.311473
+
+2021-03-17 10:24:09,040 | INFO | ZNO results were saved
+2021-03-17 10:24:09,733 | INFO | The best result were in both 2019 2020 years with 72 test value
