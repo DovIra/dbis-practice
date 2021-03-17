@@ -273,25 +273,31 @@ def log_best_zno_result():
     query = '''
     WITH some_count AS (
        SELECT 
-            year,
-            max(engBall100) as max_ball_100,
-            max(engBall12) as max_ball_12,
-            max(engBall) as max_ball
-        from zno_results
-        where engTest = 'Англійська мова' and engTestStatus = 'Зараховано'
-        group by year
+        year,
+        max(engBall100) as max_ball_100,
+        max(engBall12) as max_ball_12,
+        max(engBall) as max_ball
+      from zno_results
+      where engTest = 'Англійська мова' and engTestStatus = 'Зараховано'
+      group by year
     )
     SELECT
           *
     FROM some_count bb
-    order by max_ball desc
-    limit 1
+    where max_ball = (select max(max_ball) FROM some_count )
 '''
     cursor.execute(query)
-    for row in cursor:
-        logger.info("The best result was in " + str(row[0]) + " year with " + str(row[3]) + " test value")
-        print ("The best result was in " + str(row[0]) + " year with " + str(row[3]) + " test value")
-
+    if cursor.rowcount == 1:
+        for row in cursor:
+            logger.info("The best result was in " + str(row[0]) + " year with " + str(row[3]) + " test value")
+            print("The best result was in " + str(row[0]) + " year with " + str(row[3]) + " test value")
+    else:
+        msg = 'The best result were in both '
+        for row in cursor:
+            msg += str(row[0]) + ' '
+        msg += 'years with ' + str(row[3]) + ' test value'
+        logger.info(msg)
+        print(msg)
 # ----------------------------------------------------------------------------------------
 
 logger = logging.getLogger(__name__)
